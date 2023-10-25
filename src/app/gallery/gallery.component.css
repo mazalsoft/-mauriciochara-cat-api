@@ -1,0 +1,9 @@
+#fixedcat { 
+    width:1000px;
+    height:500px;
+}
+
+.container {
+  border: 2px solid red;
+  height:500px;
+}

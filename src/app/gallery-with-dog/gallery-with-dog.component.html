@@ -1,0 +1,68 @@
+<div class="container">
+<div class="row">
+  <div class="col-sm-12 text-center">
+  <button (click)="requestData()" type="button" class="btn btn-primary btn-lg"> Guao Guao !!!</button>
+  <br><br>
+  </div>
+<div class="col-sm-12">
+  <img [src]="image" alt="Cinque Terre" class='img-fluid'>
+</div>
+
+<div class="row ">
+  <div class="col-sm-12">
+
+  <!-- <h3>Breed info: </h3>
+  <p> Breed Name:  </p>
+  <p> Breed For:  </p>
+  <p> Breed Group:  </p>
+  <p> Temperament:  </p>
+  <p> Life Span:  </p>
+  <p> Original: </p> -->
+
+  <table class="table" *ngIf="breedinfo">
+  <!-- <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead> -->
+  <tbody>
+    <tr>
+      <th scope="row">Nombre de la raza:</th>
+      <td>{{breedinfo.name}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Raza para:</th>
+      <td>{{breedinfo.bred_for}}</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Grupo de raza:</th>
+      <td>{{breedinfo.breed_group}}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Temperamento</th>
+      <td>Larry</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Esperanza de vida:</th>
+      <td>{{breedinfo.life_span}}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Original</th>
+      <td>{{breedinfo.temperament}}</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
+
+</div>
+</div>
